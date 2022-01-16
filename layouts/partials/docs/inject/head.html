@@ -1,0 +1,2 @@
+{{ $css := resources.Get "syntax.scss"  | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink  }}">
